@@ -11,6 +11,8 @@ public class Main {
         Stack<String> s = new Stack<>();
         s.push("Juve");
         s.push("Inter");
+        s.push("Juuuve");
+        s.push("Inuuuter");
         System.out.println(s.pop());
         System.out.println(s);
     }
