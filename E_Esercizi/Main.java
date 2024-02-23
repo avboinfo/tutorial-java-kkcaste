@@ -3,6 +3,7 @@ package E_Esercizi;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.File;
+import java.io.FileWriter;
 
 public class Main {
     public static void main( String[] args ) {
@@ -11,11 +12,15 @@ public class Main {
         
             
         try{
-            File f=new File("E_Esercizi/datiIn.txt");
-            Scanner leggiFile=new Scanner(f);
+            File fIn=new File("E_Esercizi/datiIn.txt");
+            File fOut=new File("E_Esercizi/datiOut.txt");
+            Scanner leggiFile=new Scanner(fIn);
             while(leggiFile.hasNextLine()){
                 String s=leggiFile.nextLine();
                 p.push(s);
+                FileWriter myWriter = new FileWriter(fOut);
+                myWriter.write(p+"");
+                myWriter.close();
                 
             }
 
@@ -23,9 +28,10 @@ public class Main {
             System.out.println("Errore: "+e);
         }
         
+        
             
 
-            System.out.println(p);
+            
 
     }
 }

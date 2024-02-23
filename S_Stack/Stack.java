@@ -23,7 +23,7 @@ public class Stack<T> {
         int size = list.size();
         if (size==0) return null;
         T x = list.get(size-1);
-        list.remove(size-1);
+        list.remove(x);
         
         return x;
         

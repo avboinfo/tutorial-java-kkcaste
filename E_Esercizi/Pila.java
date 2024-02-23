@@ -24,8 +24,8 @@ public class Pila <T> {
     }
 
     public String toString(){
-        String s="PIlaaaaaa\n";
-        for(int i=0;i<list.size();i++){
+        String s="PIla:\n";
+        for(int i=list.size()-1;i>=0;i--){
            s+=list.get(i)+"\n";
         }
         return s;

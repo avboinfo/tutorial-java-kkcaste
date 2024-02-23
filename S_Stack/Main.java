@@ -5,15 +5,22 @@
 
 package S_Stack;
 
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.File;
+
+
 public class Main {
 
-    public static void main( String[] args ) {
+    public static void main( String[] args ) throws IOException {
+        
         Stack<String> s = new Stack<>();
-        s.push("Juve");
-        s.push("Inter");
-        s.push("Juuuve");
-        s.push("Inuuuter");
-        System.out.println(s.pop());
+       
+        File f=new File("S_Stack/dati.txt");
+        FileWriter writer = new FileWriter(f); 
+        writer.write("Ciao");
+        
+        
         System.out.println(s);
     }
 
