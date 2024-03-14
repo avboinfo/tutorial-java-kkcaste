@@ -6,12 +6,14 @@ public class Main {
         Lista l=new Lista();
 
 
-        l.add(new Nodo(100,null));
-        l.add(new Nodo(10,null));
-        l.add(new Nodo(350,null));
-        l.add(new Nodo(178,null));
+        l.addSorted(new Nodo(14,null));
+        l.addSorted(new Nodo(03,null));
+        
+        l.addSorted(new Nodo(24,null));
+            
 
         System.out.println(l);
+        
     }
     
 }
