@@ -19,6 +19,7 @@ public class Main {
         File f=new File("S_Stack/dati.txt");
         FileWriter writer = new FileWriter(f); 
         writer.write("Ciao");
+        writer.close();
         
         
         System.out.println(s);

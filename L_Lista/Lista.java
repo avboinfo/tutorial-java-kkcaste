@@ -19,7 +19,7 @@ public class Lista {
             p.setSuccessivo(n);
             
         }
-        Nodo p = radice;
+        
     }
 
     public String toString(){

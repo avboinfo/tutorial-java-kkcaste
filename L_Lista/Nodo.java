@@ -1,4 +1,4 @@
-import java.io.*;
+
 public class Nodo {
 
     private int valore;

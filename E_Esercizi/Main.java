@@ -1,6 +1,5 @@
 package E_Esercizi;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileWriter;
@@ -23,15 +22,12 @@ public class Main {
                 myWriter.close();
                 
             }
+            leggiFile.close();
 
         }catch(Exception e){
             System.out.println("Errore: "+e);
         }
         
-        
-            
-
-            
 
     }
 }

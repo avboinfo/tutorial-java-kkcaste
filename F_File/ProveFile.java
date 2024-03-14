@@ -1,6 +1,6 @@
 import java.io.File;  
 import java.io.PrintWriter;  
-import java.lang.Math;
+
 
 public class ProveFile{
     public static void main(String[] args){
