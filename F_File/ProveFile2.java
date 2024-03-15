@@ -2,7 +2,7 @@ import java.io.File;
 import java.io.PrintWriter;  
 
 
-public class ProveFile{
+public class ProveFile2{
     public static void main(String[] args){
 
     File f=new File("random.csv");
