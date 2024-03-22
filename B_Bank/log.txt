@@ -1,0 +1,5 @@
+Versamento di 2000.0
+Prelevo di 500.0
+Prelevo di 400.0
+Prelevo di 300.0
+Bonifico di 200.0 a Romeo
