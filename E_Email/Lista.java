@@ -1,20 +1,22 @@
-public class ListaGen<T> {
+package E_Email;
 
-    NodoGen<T> root;
+public class Lista<T> {
 
-    public ListaGen() {
+    Nodo<T> root;
+
+    public Lista() {
         this.root = null;
     }
 
     public void addTail(T v ) {
-        addTail( new NodoGen<T>( v ) );
+        addTail( new Nodo<T>( v ) );
     }
 
-    public void addTail( NodoGen<T> n ) {
+    public void addTail( Nodo<T> n ) {
         if (root==null) {
             root = n;
         } else {
-            NodoGen<T> tmp = root;
+            Nodo<T> tmp = root;
             while (tmp.getSuccessivo()!=null) tmp=tmp.getSuccessivo();
             tmp.setSuccessivo( n );
         }
@@ -22,7 +24,7 @@ public class ListaGen<T> {
 
     public String toString() {
         String s = "\nLIST BEGIN *************\n";
-        NodoGen<T> tmp = root;
+        Nodo<T> tmp = root;
         while (tmp!=null) {
             s += tmp + "\n";
             tmp=tmp.getSuccessivo();
@@ -33,3 +35,4 @@ public class ListaGen<T> {
 
 
 }
+

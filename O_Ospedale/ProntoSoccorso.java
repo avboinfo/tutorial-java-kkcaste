@@ -15,6 +15,10 @@ public class ProntoSoccorso {
         ps.addTail(new Paziente("Vincenzo","Giambanco","Bianco"));
     }
 
+    public String cercaPaziente(){
+        String result="Lista Pazienti con triage="+triage+"\n";
+    }
+
     @Override
     public String toString() {
         return "ProntoSoccorso [ps=" + ps + "]";
