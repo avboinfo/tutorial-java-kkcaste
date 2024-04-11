@@ -8,6 +8,10 @@ public class Lista<T> {
         this.root = null;
     }
 
+    public Nodo<T> getRoot(){
+        return root;
+    }
+
     public void addTail(T v ) {
         addTail( new Nodo<T>( v ) );
     }

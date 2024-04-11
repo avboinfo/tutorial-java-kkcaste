@@ -2,7 +2,8 @@ package O_Ospedale;
 import java.util.*;
 
 public class Paziente {
-    String nome,cognome,triage;
+
+    String nome, cognome, triage;
 
     public Paziente(String nome, String cognome, String triage) {
         this.nome = nome;
@@ -20,8 +21,8 @@ public class Paziente {
 
     @Override
     public String toString() {
-        return "ProntoSoccorso [nome=" + nome + ", cognome=" + cognome + ", triage=" + triage + "]";
+        return "Paziente [nome=" + nome + ", cognome=" + cognome + ", triage=" + triage + "]";
     }
 
-    
+
 }
