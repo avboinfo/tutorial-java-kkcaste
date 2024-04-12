@@ -1,9 +1,28 @@
-package O_Ospedale;
-
-
-
+package Supermercato;
 
 public class Lista<T> {
+    class Iteratore {
+        private Nodo nodo;
+        private Iteratore(Nodo nodo) {
+            this.nodo = nodo;
+        }
+        public boolean hasNext() {
+            return nodo!=null;
+        }
+        public Nodo next() {
+            if (nodo==null) return null;
+            // Nodo result = new Nodo( nodo.getValore(), nodo.getSuccessivo() );
+            Nodo result = nodo;
+            nodo = nodo.getSuccessivo();
+            return result;
+        }
+    }
+
+    public Iteratore getIterator() {
+        Iteratore i = new Iteratore(root);
+        return i;
+    }
+
 
     Nodo<T> root;
 
@@ -14,6 +33,8 @@ public class Lista<T> {
     public Nodo<T> getRoot() {
         return root;
     }
+
+    
 
     public boolean isEmpty() {
         return root==null;
@@ -46,6 +67,7 @@ public class Lista<T> {
         for (int i=0; i<pos; i++) {
             tmp = root.getSuccessivo();
         }
+        Iteratore iter = this.getIterator();
 
         int i; 
         Nodo npos=null;
@@ -59,13 +81,13 @@ public class Lista<T> {
     }
     
     public String toString() {
-        String s = "\nLIST BEGIN *************\n";
+        String s = "\n";
         Nodo<T> tmp = root;
         while (tmp!=null) {
             s += tmp + "\n";
             tmp=tmp.getSuccessivo();
         }
-        s += "********************* LIST END\n";
+        s += "";
         return s;
     }
 
