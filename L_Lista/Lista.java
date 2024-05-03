@@ -1,3 +1,5 @@
+import BinarySearchTree.Nodo;
+
 public class Lista {
 
     class Iteratore{

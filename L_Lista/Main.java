@@ -1,5 +1,7 @@
 //import java.util.Scanner;
 
+import BinarySearchTree.Nodo;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Partiti!");

@@ -1,0 +1,5 @@
+GRAFI ALBERI
+Primo "Cerchio" = Radice (Nodo)
+Tutti i cerchi tranne gli estremi = Nodi
+Collegamenti = Vertice / Arco
+Nodi agli estremi = Foglie
